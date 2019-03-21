@@ -9,6 +9,7 @@
   "author": "FernandoAlejandroYerenaRamos",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "9.5.0",
     "postcss-cli": "6.1.2"
   }
 }
