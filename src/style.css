@@ -206,3 +206,15 @@ body {
 .movie-container .cover {
     margin: 16px 5px;
 }
+
+@media screen and (max-width: 1024px){
+    .grid-menu{
+        background: red;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .grid-menu{
+        background: blue;
+    }
+}
