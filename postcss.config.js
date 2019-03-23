@@ -4,9 +4,10 @@ module.exports = {
         //     grid: true
         // }),
         require('postcss-preset-env')({
+            stage: 1,
             autoprefixer: {
                 grid: true
             }
-        })   
+        }),
     ]
 }
