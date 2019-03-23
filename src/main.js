@@ -13,7 +13,7 @@ function generateUserItem({ name, picture: { thumbnail: avatar } })
 {
     const list_item_user =
         `<li>
-            <figure class="avatar">
+            <figure class="user-avatar">
                 <img = src="${avatar}" alt="User's avatar"/>
             </figure>
             <p>${name.first + " " + name.last}</p>
