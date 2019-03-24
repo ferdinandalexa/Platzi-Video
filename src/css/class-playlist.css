@@ -1,0 +1,12 @@
+[class*="-playlist"] {
+    /* padding-inline-start: 30px; */
+    padding-left: 30px;
+    & h3 {
+        /* padding-inline-start: 7px; */
+        padding-left: 7px;
+    }
+    &:nth-of-type(2) h3 {
+        /* margin-block-start: 40px; */
+        margin-top: 40px;
+    }
+}

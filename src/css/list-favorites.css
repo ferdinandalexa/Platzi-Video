@@ -1,0 +1,21 @@
+.list.favorites {
+    counter-reset: bullets;
+    /* padding-block-start: 0; */
+    padding-left: 0;
+    & li {
+        /* margin-inline-end: 35px; */
+        margin-right: 35px;
+        /* margin-block-end: 20px; */
+        margin-bottom: 20px;
+        cursor: pointer;
+        &::before {
+            display: inline-block;
+            width: 25px;
+            text-align: center;
+            counter-increment: bullets;
+            content: counter(bullets)"";
+            /* padding-inline-end: 25px; */
+            padding-right: 25px;
+        }
+    }
+}

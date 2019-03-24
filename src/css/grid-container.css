@@ -1,0 +1,21 @@
+.grid-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: "logo logo header header" "menu menu video video";
+    grid-template-rows: 90px 1fr;
+    grid-template-columns: repeat(2, 150px) repeat(2, 1fr);
+    @media (--small-laptop) {
+        grid-template-areas: "logo header" "video video" "menu menu";
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (--tablets) {
+        grid-template-areas: "logo" "header" "video" "menu";
+        grid-template-columns: auto;
+        grid-template-rows: 55px 75px;
+    }
+    @media (--small-screens) {
+        grid-template-areas: "header" "menu" "video";
+        grid-template-columns: auto;
+        grid-template-rows: 100px;
+    }
+}

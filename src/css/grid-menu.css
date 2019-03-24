@@ -1,0 +1,8 @@
+.grid-menu {
+    grid-area: menu;
+    background-color: var(--darkblue);
+    color: white;
+    @media (--tablets) {
+        display: none;
+    }
+}
