@@ -96,6 +96,7 @@ body {
 
 .grid-logo .logo img {
       width: 250px;
+<<<<<<< HEAD
     }
 
 @media @media (--small-laptop) {
@@ -118,6 +119,30 @@ body {
     }
 
 @media @media (--small-screens) {
+=======
+    }
+
+@media (--small-laptop) {
+
+.grid-logo .logo {
+      justify-content: flex-start;
+      /* margin-block-start: 20px; */
+      margin-left: 20px
+  }
+    }
+
+@media (--tablets) {
+
+.grid-logo .logo {
+      justify-content: center;
+      /* margin-inline-start: initial; */
+      margin-left: 0;
+      margin-left: initial
+  }
+    }
+
+@media (--small-screens) {
+>>>>>>> fix-postcss
 
 .grid-logo {
     display: none
