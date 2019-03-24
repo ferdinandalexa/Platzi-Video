@@ -1,5 +1,6 @@
 :root {
-    --darkblue: #151b31;
+    --darkblue: rgb(20, 27, 48);
+    /* --darkblue: #151b31; */
     --whitesearch: #EDEDED;
     --lightgray: #BBB;
     --midgray: #888;
@@ -42,7 +43,7 @@ body {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: logo;
-    background-color: #151b31;
+    background-color: rgb(20, 27, 48);
     background-color: var(--darkblue);
 }
 
@@ -50,7 +51,9 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
-    @mixin disflex var(--justify: center), var(--align:center);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo img {
@@ -126,7 +129,7 @@ body {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: menu;
-    background-color: #151b31;
+    background-color: rgb(20, 27, 48);
     background-color: var(--darkblue);
     color: white;
 }
@@ -235,7 +238,6 @@ body {
 .movie-container .cover {
     margin: 16px 5px;
 }
-
 @media screen and (max-width: 1024px) {
     .grid-container {
             grid-template-areas: "logo header" "video video" "menu menu";
@@ -248,7 +250,7 @@ body {
         margin-left: 20px;
     }
     .grid-header {
-        background-color: #151b31;
+        background-color: rgb(20, 27, 48);
         background-color: var(--darkblue);
         color: white;
     }
@@ -328,7 +330,7 @@ body {
     }
 }
 
-@media screen and (width: <= 600px) {
+@media screen and (max-width: 600px) {
     .grid-container {
             grid-template-areas: "header" "menu" "video";
         -ms-grid-columns: auto;

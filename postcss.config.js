@@ -9,5 +9,6 @@ module.exports = {
                 grid: true
             }
         }),
+        require('postcss-color-hwb')(),
     ]
 }
