@@ -1,0 +1,12 @@
+:root {
+    --darkblue: hwb(227, 8%, 81%);
+    /* --darkblue: #151b31; */
+    --whitesearch: #ededed;
+    --lightgray: #bbb;
+    --midgray: #888;
+    --darkgray: #444;
+}
+
+@custom-media --small-laptop screen and (width <=1024px);
+@custom-media --tablets screen and (width <=768px);
+@custom-media --small-screens screen and (width <=600px);

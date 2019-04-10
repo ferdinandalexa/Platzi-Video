@@ -1,0 +1,28 @@
+.grid-logo {
+    grid-area: logo;
+    background-color: var(--darkblue);
+    & .logo {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & img {
+            width: 250px;
+        }
+        @media (--small-laptop) {
+            justify-content: flex-start;
+            /* margin-block-start: 20px; */
+            margin-left: 20px;
+        }
+        @media (--tablets) {
+            justify-content: center;
+            /* margin-inline-start: initial; */
+            margin-left: initial;
+        }
+    }
+    @media (--small-screens) {
+        display: none;
+    }
+}

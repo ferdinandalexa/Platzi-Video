@@ -1,0 +1,22 @@
+.grid-header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-block-end: solid 1px #BBB; */
+  border-bottom: solid 1px var(--lightgray);
+
+  @media (--small-laptop) {
+    background-color: var(--darkblue);
+    color: white;
+  }
+
+  @media (--tablets) {
+    justify-content: center;
+    position: relative;
+  }
+
+  @media (--small-screens) {
+    justify-content: space-between;
+  }
+}

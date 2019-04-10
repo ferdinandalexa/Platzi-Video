@@ -1,0 +1,4 @@
+.grid-video {
+  grid-area: video;
+  overflow: hidden;
+}

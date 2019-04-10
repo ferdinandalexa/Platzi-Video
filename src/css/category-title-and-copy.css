@@ -1,0 +1,5 @@
+.category-title, .category-copy {
+    margin: 0;
+    /* margin-inline-start: 30px; */
+    margin-left: 30px;
+}
