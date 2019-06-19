@@ -25,7 +25,7 @@ function generateUserItem({ name, picture: { thumbnail: avatar } })
 // Hace una solicitud a yts.ag para obtener una lista de películas del genero que le especiquemos
 async function getMovies(genre)
 {
-    const baseURLCategories = `https://yts.am/api/v2/list_movies.json?genre=`;
+    const baseURLCategories = `https://yts.lt/api/v2/list_movies.json?genre=`;
     const opts = `&limit=10&sort_by=like_count&order_by=desc`;
     // console.log(`${baseURLCategories}${genre}${opts}`);
     const response = await fetch(`${baseURLCategories}${genre}${opts}`);
